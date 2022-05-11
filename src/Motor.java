@@ -12,4 +12,8 @@ public class Motor {
         Model.out.rotateTo(port, 0);
         Model.out.setDisplay("close");
     }
+
+    void getDoorPos(){
+
+    }
 }
