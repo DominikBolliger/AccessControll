@@ -9,21 +9,21 @@ public class AccessControlProject {
         ts2.name = "Taste 2";
         ts2.port = 2;
 
-       DistanzSensor ds1 = new DistanzSensor();
-       ds1.name = "Distanz Sensor 1";
-       ds1.port = 3;
+        DistanzSensor ds1 = new DistanzSensor();
+        ds1.name = "Distanz Sensor 1";
+        ds1.port = 3;
 
-       Motor m1 = new Motor();
-       m1.name = "Motor 1";
-       m1.port = "A";
+        Motor m1 = new Motor();
+        m1.name = "Motor 1";
+        m1.port = "A";
 
-       while(true){
+        while(true){
            if (ts1.isPressed()){
                m1.openDor();
            }
            if (ts2.isPressed()){
                m1.closeDor();
            }
-       }
+        }
     }
 }
